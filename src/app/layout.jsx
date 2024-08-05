@@ -1,9 +1,12 @@
 import React from 'react'
+import './global.css'
+import Header from '@/components/Header'
 
-function Layout({ children }) {
+const Layout = ({ children }) => {
     return (
         <html lang='en'>
             <body>
+                <Header />
                 {children}
             </body>
         </html>
